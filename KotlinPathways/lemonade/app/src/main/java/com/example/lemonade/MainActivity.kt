@@ -39,7 +39,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.lemonade.ui.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
@@ -54,11 +53,8 @@ class MainActivity : ComponentActivity() {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LemonadeApp() {
-
     var currentStep by remember { mutableStateOf(1) }
-
     var squeezeCount by remember { mutableStateOf(0) }
-
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
